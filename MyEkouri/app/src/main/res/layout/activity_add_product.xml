@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddProductActivity"
+    android:background="#FFFFFFFF"
+    android:fillViewport="true"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Muat Naik dan Kemaskini Produk"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/proImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile"
+            android:transitionName="logo_image"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="410dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Nama Produk">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proBrand"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Jenama">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proDesc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Butiran">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proPrice"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Harga">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proCategory"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Kategori">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/down"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FF000000"
+            android:text="Muat Naik dan Kemaskini"
+            android:textColor="#FFFFFFFF" />
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
